@@ -1,0 +1,162 @@
+
+/* Colores */
+
+    :root{
+        --blue: #0071e2;
+        --blue-hover: #016dd9;
+        --red: #ff5858;
+        --green: #06ad0c;
+        --darkred: #ff0707;
+        --black: #000;
+        --lightgray: #e8e8e8;
+        --offwhite: #f2f2f2;
+        --grey: #9c9c9c;
+        --blue-grey-1: #9fa3af;
+        --blue-grey-2: rgba(187,190,201,0.7450980392156863);
+        --secondary-grey-dark: #292929;
+        --secondary-grey-light: #dcdcdc;
+        --maindark: #171717;
+        --dark: #212121;
+        --semidark: #2c2c2c;
+        --toastify-color-progress-light: linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);
+
+        --bg-color-1: #b8d4fe;
+        --bg-color-2: #1C1D21;
+        --bg-color-3: #618ac9;
+        --bg-color-4: #52ad5a;
+        --bg-color-5: #f5f5f5;
+
+    }
+/* Fin colores */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+main{}
+
+/* Section */
+.cuarta-parte{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*div contenedor del form*/
+.cuarta-parte > div{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+/*formulario*/
+.form-ingresar-datos{
+    width: 600px;
+}
+
+.form-ingresar-datos ul{
+    width: 600px;
+    border: 1px dashed #ddd;
+    background-color: var(--dark);
+    list-style: none;
+}
+
+.form-ingresar-datos li{
+    width: 560px;
+    margin: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.form-ingresar-datos li label{
+    padding: 5px 0;
+    text-align: left;
+    width: 100%;
+    /* background: crimson;    */
+    color: var(--bg-color-5);
+}
+
+.form-ingresar-datos li input{
+    margin: 5px 0;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 90%;
+    /* background-color: cornflowerblue; */
+    color: var(--offwhite);
+    background: var(--blue-grey-1);
+    border-radius: 5px;
+}   
+
+.form-ingresar-datos li input::placeholder{
+    margin: 0 10px;
+    color: var(--offwhite);
+}
+
+
+/* Botón guapo */
+
+.button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+
+    width: 113px;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
+   
